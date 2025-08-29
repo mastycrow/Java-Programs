@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+         Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        StringBuilder digits = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (Character.isDigit(ch)) {
+                digits.append(ch);
+            }
+        }
+        if (digits.length() > 0) {
+            System.out.println(digits.toString());
+        } else {
+            System.out.println("0");
+        }
+    }
+}
